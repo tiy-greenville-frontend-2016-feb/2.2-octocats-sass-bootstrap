@@ -1,44 +1,19 @@
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$grid-gutter-width: 10px;
+$container-large-desktop: (1014px + $grid-gutter-width);
 
 /* Import Bootstrap */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-img {
-  max-width: 100%;
+body {
+  background: url('http://unsplash.it/g/1800/1800') 0 0 fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
-.octodex {
-  @extend .row;
-}
-
-.octocat {
-  @extend .col-md-4;
-}
-
-.image-footer {
-  @extend .row;
-}
-
-.image-number {
-  @extend .col-md-1;
-}
-
-.image-caption {
-  @extend .col-md-11;
-}
-
-.image-attribution {
-  @extend .col-md-5;
-}
-
-.image-authors {
-  @extend .col-md-6;
-  @extend .row;
-
-  list-style: none;
-
-  li {
-    @extend .col-md-4;
-  }
+.blog-post {
+  background-color: white;
+  background-clip: content-box;
+  height: 350px;
 }
